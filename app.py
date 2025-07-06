@@ -79,7 +79,7 @@ def manage_users():
     users = cursor.fetchall()
     return render_template('manage-users.html', users=users)
 
-@app.route('/manage-jobs')
+@app.route('/employer/manage-jobs')
 def manage_jobs():
     conn = get_db()
     cursor = conn.cursor()
