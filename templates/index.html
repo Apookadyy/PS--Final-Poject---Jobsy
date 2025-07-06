@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!------------- NAVBAR SECTION ---------------->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+
+            <!-- Brand on the Left -->
+            <a class="navbar-brand text-light" href="#">Jobsy</a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="./employeer/manage-jobs.html">Employeers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="./admin/admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="./login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!------------- BANNER SECTION ---------------->
+    <section class="py-5 text-cente text-white banner-section">
+        <div class="container">
+            <h1 class="display-5">Find Your Dream Job</h1>
+            <p class="lead">Explore thousands of opportunities from top companies</p>
+            <a href="./index.html#jobs" class="btn btn-light btn-lg">Search Jobs</a>
+        </div>
+    </section>
+
+    <!--------------- SEARCH FILTER ---------------->
+    <div class="container my-4">
+        <div class="row g-2">
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Location</option>
+                    <option>Hyderabad</option>
+                    <option>Bangalore</option>
+                    <option>Pune</option>
+                    <option>Chennai</option>
+                    <option>Kerala</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Category</option>
+                    <option>IT</option>
+                    <option>Marketing</option>
+                    <option>HR</option>
+                    <option>Software Development</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option selected>Company</option>
+                    <option>Meta</option>
+                    <option>Amazon</option>
+                    <option>Apple</option>
+                    <option>Netflix</option>
+                    <option>Google</option>
+                    <option>Infosys</option>
+                    <option>Accenture</option>
+                    <option>Cisco</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <button class="btn btn-primary w-100">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ FEATURED JOBS SECTION -------------->
+    <div class="container my-5" id="jobs">
+        <h3 class="mb-4">Featured Jobs</h3>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">
+                            <strong>Company:</strong>Infosys <br>
+                            <strong>Location:</strong> Bengaluru<br>
+                            <strong>Salary:</strong> Rs6-8 LPA
+                        </p>
+                        <a href="./apply-job.html" class="btn btn-sm btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Developer</h5>
+                        <p class="card-text">
+                            <strong>Company:</strong> Accenture<br>
+                            <strong>Location:</strong> Hyderabad<br>
+                            <strong>Salary:</strong> Rs7-10 LPA
+                        </p>
+                        <a href="./apply-job.html" class="btn btn-sm btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Engineer</h5>
+                        <p class="card-text">
+                            <strong>Company:</strong> Amazon<br>
+                            <strong>Location:</strong>Pune<br>
+                            <strong>Salary:</strong> Rs5-8 LPA
+                        </p>
+                        <a href="./apply-job.html" class="btn btn-sm btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Stack Engineer</h5>
+                        <p class="card-text">
+                            <strong>Company:</strong>Cisco<br>
+                            <strong>Location:</strong> Chennai<br>
+                            <strong>Salary:</strong> Rs6-8 LPA
+                        </p>
+                        <a href="./apply-job.html" class="btn btn-sm btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Support Associate</h5>
+                        <p class="card-text">
+                            <strong>Company:</strong> Meta<br>
+                            <strong>Location:</strong> Pune<br>
+                            <strong>Salary:</strong> Rs18LPA
+                        </p>
+                        <a href="./apply-job.html" class="btn btn-sm btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Software Developer</h5>
+                        <p class="card-text">
+                            <strong>Company:</strong>Google<br>
+                            <strong>Location:</strong> Hyderabad<br>
+                            <strong>Salary:</strong> Rs9.5-15LPA
+                        </p>
+                        <a href="./apply-job.html" class="btn btn-sm btn-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------ FOOTER SECTION ------------------->
+    <footer class="footer bg-primary text-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get help -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Get help</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+
+                <!-- Online shop -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Online shop</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Dress</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow us -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                        <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                        <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!------------ COPYRIGHT SECTION ------------------->
+    <footer class="bg-light text-black text-center py-3">
+        <div class="container">
+            <small>&copy; 2025 JobHub. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

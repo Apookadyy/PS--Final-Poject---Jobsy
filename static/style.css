@@ -1,0 +1,160 @@
+
+
+/******************* HOME PAGE **************************/
+
+/********** NAVBAR **********/
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/********** BANNER **********/
+.banner-section{
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.banner-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+/********** FOOTER **********/
+.footer-title {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #e91e63;
+  bottom: 0;
+  left: 0;
+}
+
+.footer a {
+  color: #ec1111;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: block;
+  margin-bottom: 8px;
+  
+}
+
+.footer a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.footer .social-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.footer .social-icon:hover {
+  background-color: #ffffff;
+  color: #24262b;
+
+}
+
+/********** FORMS **********/
+.forms .wrapper {
+  width: 100%;
+  max-width: 360px;
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05); /* fixed the box-shadow typo */
+}
+
+.forms h1{
+    font-size: 2rem;
+    color: #07001f;
+    margin-bottom: 1.2rem;
+}
+.forms form input{
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
+}
+.forms button{
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(3, 63, 228);
+}
+.forms button:hover{
+    background: rgba(236, 236, 236, 0.877);
+    color: rgb(3, 63, 228);
+}
+.forms input:focus{
+    border: 1px solid rgb(192, 192, 192);
+}
+.forms .member{
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #636363;
+
+}
+.forms .member a{
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}
+.forms .recover{
+    text-align: right;
+    font-size: 0.7rem;
+    margin: 0.3rem 1.4rem 0 0;
+
+}
+.forms .recover a{
+    text-decoration: none;
+    color: #464647;
+}
+
+/* @media (max-height: 700px) {
+  .min-vh-100 {
+    min-height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+} */

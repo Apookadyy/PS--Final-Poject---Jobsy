@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Forms CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!------------- NAVBAR SECTION ---------------->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+
+            <!-- Brand on the Left -->
+            <a class="navbar-brand text-light" href="#">Jobsy</a>
+
+            <!-- Toggler button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 me-3">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="./login.html">Login</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success text-white" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!------------- REGISTRATION FORM SECTION ---------------->
+    <section class="py-5 login-form forms">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="wrapper shadow">
+                <h1>Register</h1>
+
+                <form action="#">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Name">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Re-Enter Password">
+
+                    <button type="submit">Register</button>
+                </form>
+
+                <div class="member">
+                    Already a member? <a href="./login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------------ FOOTER SECTION ------------------->
+    <footer class="footer bg-primary text-light py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Affiliate program</a></li>
+                    </ul>
+                </div>
+
+                <!-- Get help -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Get help</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order status</a></li>
+                        <li><a href="#">Payment options</a></li>
+                    </ul>
+                </div>
+
+                <!-- Online shop -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Online shop</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Bag</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Dress</a></li>
+                    </ul>
+                </div>
+
+                <!-- Follow us -->
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h4 class="footer-title">Follow us</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#"><i class="fab fa-facebook-f social-icon"></i></a>
+                        <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                        <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in social-icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!------------ COPYRIGHT SECTION ------------------->
+    <footer class="bg-light text-black text-center py-3">
+        <div class="container">
+            <small>&copy; 2025 JobHub. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
